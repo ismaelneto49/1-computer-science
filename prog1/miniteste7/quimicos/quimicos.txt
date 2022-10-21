@@ -1,0 +1,42 @@
+
+Elementos Químicos
+
+Sempre que juntamos uma certa quantidade de coisas, surge a necessidade de agrupá-las de acordo com algum critério. Por exemplo, na universidade, os alunos poderiam ser organizados de acordo com o curso; num curso de graduação, os alunos poderiam ser organizados de acordo com os períodos. Foi pensando dessa forma que os cientistas classificaram os elementos químicos para facilitar o estudo da Química. A tabela a seguir lista alguns elementos da tabela periódica juntamente com suas respectivas massas atômicas (massa de um átomo) aproximadas:
+Nome 	Massa 	Símbolo
+Hidrogênio 	1 	H
+Enxofre 	32 	S
+Oxigênio 	16 	O
+Carbono 	12 	C
+Cálcio 	40 	Ca
+Sódio 	23 	Na
+Fósforo 	31 	P
+
+Uma das tarefas mais básicas num laboratório é o cálculo da massa de uma molécula (agrupamento de átomos). Por exemplo: para calcular a massa molecular da água (H2O), que possui dois átomos de Hidrogênio e um de Oxigênio, fazemos H * 2 + O, onde a massa de cada átomo pode ser obtida na tabela acima. Daí, H * 2 + O é igual a 1 * 2 + 16, que resulta em 18 unidades de massa atômica.
+
+Um cientista precisa de uma maneira automática para calcular a massa de várias moléculas com o intuito de agilizar suas pesquisas. Para ajudá-lo, você precisa desenvolver um programa que realize esse cálculo. O seu programa deve usar os dados da tabela acima.
+Entrada
+
+Cada linha da entrada corresponde a um caso de teste diferente. Cada caso de teste é composto por uma sequência de símbolos de elementos químicos seguidos ou não de um inteiro indicando a quantidade de átomos daquele elemento, todos separados por um espaço em branco.
+Saída
+
+Para cada caso de teste da entrada o seu programa deve imprimir um número inteiro que indica a massa molecular calculada. O programa deve parar quando a palavra fim for digitada. Dica: para saber se o conteúdo de uma string pode ser convertido para inteiro use a função isdigit().
+Exemplo
+
+python joao.py
+C O 2
+H 2 O
+C 12 H 22 O 11
+fim
+44
+18
+342
+
+Última atualização por daltonserey, 3 anos atrás
+
+Para enviar sua resposta:
+
+    faça o checkout da atividade com o comando p1 checkout 5014603807326208;
+    faça a atividade, criando sua resposta em um arquivo no diretório do checkout;
+    faça o commit com o comando p1 commit ⟨nome-do-seu-arquivo⟩. 
+
+

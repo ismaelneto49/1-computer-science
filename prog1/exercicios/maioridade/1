@@ -1,0 +1,17 @@
+def maioridade_penal(string_names, string_ages):
+    names = string_names.split()
+    ages = string_ages.split()
+    of_age = ''
+    for i in range(len(ages)):
+        if int(ages[i]) >= 18:
+            of_age = f'{of_age} {names[i]}'
+    
+    formatted = ''
+    for c in range(1, len(of_age)):
+        formatted = f'{formatted}{of_age[c]}'
+
+    return formatted
+
+assert maioridade_penal("Jansen Italo Ana","14 21 60") == "Italo Ana"
+assert maioridade_penal("Juquinha Sapato Amalero","18 21 60") == "Juquinha Sapato Amalero"
+assert maioridade_penal("Carlos Alberto Nobrega","0 12 3") == ""

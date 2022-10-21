@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    8\n    3\n    2\n    7\n    1\n    0\n    5\n    2\n    4\n  output: |\n    Menor número: 0\n    Maior número: 7\n    Média dos extremos: 3.50\n    5 número(s) abaixo da média\n    3 número(s) acima da média\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 24,\n      \"vhalstead\": 171.3,\n      \"header\": 3\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Média dos Extremos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5011660244779008,
+    "index": null,
+    "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+  },
+  "iid": 5011660244779008,
+  "key": "5011660244779008",
+  "site": "prog1",
+  "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+}

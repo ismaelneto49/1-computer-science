@@ -1,0 +1,20 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Soma de uma PA\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4809370506362880,
+    "index": null,
+    "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+  },
+  "iid": 4809370506362880,
+  "key": "4809370506362880",
+  "site": "prog1",
+  "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+}

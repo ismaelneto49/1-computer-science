@@ -1,0 +1,50 @@
+- input: |
+    1 2 3
+    2 4 8
+    2
+    1 1 1
+    fim
+  output: |
+    linha 1 inválida: 1 2 3
+    linha 4 inválida: 1 1 1
+    sequências lidas: 4 (inválidas: 2)
+
+- input: |
+    fim
+  output: |
+    sequências lidas: 0 (inválidas: 0)
+
+- input: |
+    -1 2 3
+    2
+    1 1 1
+    fim
+  output: |
+    linha 1 inválida: -1 2 3
+    linha 3 inválida: 1 1 1
+    sequências lidas: 3 (inválidas: 2)
+
+- input: |
+    2 4 6
+    4 8
+    2
+    0 0 0
+    fim
+  output: |
+    sequências lidas: 4 (inválidas: 0)
+
+- input: |
+    0
+    fim
+  output: |
+    sequências lidas: 1 (inválidas: 0)
+
+- input: |
+    1 2
+    3 0
+    2 5 9 40
+    0 1
+    fim
+  output: |
+    sequências lidas: 4 (inválidas: 0)
+

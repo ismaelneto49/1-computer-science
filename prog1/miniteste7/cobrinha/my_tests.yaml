@@ -1,0 +1,2 @@
+- type: script
+  script: pytest --tst my_test.py cobrinha.py

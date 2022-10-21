@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    100\n    50\n    demanda 20\n    chuva 60\n    demanda 10\n    afluente 30\n    chuva 20\n    demanda 20\n  output: |\n    Açude passou a liberar água.\n    Nível: 110.00\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Limite açude\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5218432016449536,
+    "index": null,
+    "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+  },
+  "iid": 5218432016449536,
+  "key": "5218432016449536",
+  "site": "prog1",
+  "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+}

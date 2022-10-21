@@ -1,0 +1,47 @@
+
+Fila da Vacina
+
+Os postos de vacinação de Campina Grande foram orientados para organizar a vacinação dando prioridade aos idosos e crianças. Assim, todos que desejam se vacinar em um determinado dia devem chegar antes do início da vacinação e a fila é organizada colocando crianças e idosos antes dos adultos. Como a estratégia de organização ainda é recente, a Prefeitura de Campina Grande resolveu fazer uma auditoria diária dos registros de vacinação de seus postos. Faça um program que ajuda nessa auditoria. O programa recebe o mapa de vacinações realizadas nos postos e identifica quantos postos seguiram as orientações da Prefeitura e quantos não seguiram.
+Entrada
+
+Seu programa deve ler da entrada padrão os mapas dos postos (um por linha) até que a sequência "###" seja lida indicando que não tem mais mapas de postos a serem lidos. Cada linha contém uma sequência de caracteres "i", "c" ou "a" (idoso, criança e adulto, respectivamente) com o mapa da ordem de vacinação daquele dia.
+
+No exemplo de entrada abaixo, é possível identificar o mapa de 3 postos de vacinação.
+
+iicciiicicicaaaaaaaaaaa
+cciiiiaaaaaaaiaaa
+iiiiiiiicccccccaaa
+###
+
+Saída
+
+Na saída, o programa imprimirá quantos postos seguiram e quantos postos não seguiram as determinações da Prefeitura.
+
+Para o exemplo da entrada acima, a saída produzida seria
+
+sim: 2
+não: 1
+
+uma vez que o primeiro e terceiro postos seguiram as determinações e apenas o segundo não seguiu
+Atenção
+
+Como a identificação de violação da regra não precisa necessariamente analisar todos os elementos da sequência, fica proibido o uso de for na solução.
+Exemplos de Execução
+
+$ python auditoria.py
+iicciiicicicaaaaaaaaaaa
+cciiiiaaaaaaaiaaa
+iiiiiiiicccccccaaa
+###
+sim: 2
+não: 1
+
+Última atualização por jcafigueiredo, 18 horas atrás
+
+Para enviar sua resposta:
+
+    faça o checkout da atividade com o comando p1 checkout 5839769634340864;
+    faça a atividade, criando sua resposta em um arquivo no diretório do checkout;
+    faça o commit com o comando p1 commit ⟨nome-do-seu-arquivo⟩. 
+
+

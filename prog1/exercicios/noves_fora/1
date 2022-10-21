@@ -1,0 +1,29 @@
+def insertion_sort(element, list):
+    # inserts an element and automatically sorts it in the list
+    if list == []:
+        return list
+    swaps = False
+    if not swaps:
+        list.append(element)
+        for j in range(len(list)):
+            for i in range(len(list) - 1 - j):
+                if list[i] > list[i + 1]:
+                    temp = list[i + 1]
+                    list[i + 1] = list[i]
+                    list[i] = temp
+                    swaps = True
+    return list
+
+
+def noves_fora(list):
+    
+    new_list = list + []
+    for i in range(len(list)-1):
+        nine_out = (list[i] + list[i+1]) - 9
+        new_list.pop(0)
+        new_list.pop(0)
+        insertion_sort(nine_out, new_list)
+    
+    print(list)
+    print(new_list)
+    return None

@@ -1,0 +1,47 @@
+- input: |
+    universidade
+    verdade
+  output: |
+    5
+
+- input: |
+    universidade
+    universidade
+  output: |
+    0
+
+- input: |
+    universidade
+    pocoto
+  output: |
+    12
+
+- input: |
+    ''
+    ''
+  output: |
+    0
+
+- input: |
+    sapato
+    curioso
+  output: |
+    4
+
+- input: |
+    universidade
+    ''
+  output: |
+    12
+
+- input: |
+    
+    verdade
+  output: |
+    0
+
+- input: |
+    \n
+    \n
+  output: |
+    0

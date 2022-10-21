@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    400\n    70\n  name: test_name\n  output: |\n    O elevador pode transportar 5 pessoas com segurança.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Elevador\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5864131762585600,
+    "index": null,
+    "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+  },
+  "iid": 5864131762585600,
+  "key": "5864131762585600",
+  "site": "prog1",
+  "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+- input: |
+    111111
+    100
+  output: |
+    soma: 6
+    números lidos: 6 de 6
+    critério de parada: 6 ímpares
+
+- input: |
+    11111
+    100
+  output: |
+    soma: 5
+    números lidos: 5 de 5
+    critério de parada: final da sequência
+
+- input: |
+    12111
+    6
+  output: |
+    soma: 6
+    números lidos: 6 de 6
+    critério de parada: limite
+
+
+

@@ -1,0 +1,15 @@
+def is_substring(s1, s2):
+    list_subs = []
+    iterations = (len(s1) - len(s2)) + 1
+    for i in range(iterations):
+        subs = ''
+        for j in range(i, len(s2) + i):
+            subs = f'{subs}{s1[j]}'
+        list_subs.append(subs)
+        
+    for s in list_subs:
+        if s == s2:
+            return True
+    return False
+
+is_substring('CHURRASCO', 'CHURRAS')

@@ -1,0 +1,92 @@
+
+Monitoramento de açude
+
+A empresa responsável por gerir as águas de um açude precisa detectar quando os limites superior e inferior do açude são atingidos. Se as águas estão abaixo do limite inferior, o açude deve ignorar novas demandas de água. E quando o limite superior for atingido ou excedido, o açude passa liberar água.
+
+Escreva um programa que leia o limite de um açude, o seu nível de água atual e uma série de eventos que registram o aumento ou a diminuição do nível de água. Os eventos possíveis são:
+
+    chuva (acresenta água no açude)
+    afluente (acresenta água no açude)
+    demanda (diminui água do açude)
+
+Detalhes importantes:
+
+    o programa será usado como um componente que se comunica diretamente com equipamentos que produzem esses eventos; o programa deve parar de ler os dados da entrada quando o açude começar a liberar água, isto é, quando o nível de água ficar maior ou igual ao limite superior;
+    eventos de demanda só devem ser atendidos se o açude tiver capacidade de atendimento; ou seja, se o evento lido for de demanda, o programa só deve alterar o valor do nível do açude se o limite inferior não vier a ser atingido após a operação.
+
+Entrada
+
+A entrada deste programa consiste em N + 2 linhas. As duas primeiras linhas registram o limite superior e o nível atual do açude. As N linhas seguintes são uma sequência de eventos como os especificados acima. Cada evento inclui o valor de mudança de nível do açude relativo ao evento, caso seja aceito. Um exemplo de entrada válida é dado abaixo.
+
+100
+50
+demanda 20
+chuva 60
+demanda 10
+afluente 30
+chuva 20
+demanda 20
+
+Saída
+
+A saída do programa tem apenas duas linhas. Na primeira, uma mensagem que indica que o açude passou a liberar água. E a segunda indica o nível registrado do açude naquele momento. A saída abaixo é válida e corresponde à entrada acima.
+
+Açude passou a liberar água.
+Nível: 110.00
+
+Exemplos de execução
+
+No exemplo abaixo, a entrada inclui duas linhas que não serão lidas (ou consumidas) pelo programa. Isso porque ao ler até a linha anterior, o programa já terá encontrado a condição de parada.
+
+$ python acudes.py
+100
+50
+demanda 20
+chuva 60
+demanda 10
+afluente 30
+chuva 20
+demanda 20
+Açude passou a liberar água.
+Nível: 110.00
+
+Observe que, no exemplo abaixo, a entrada inclui uma linha que não será lida (ou consumida) pelo programa. Isso porque ao ler até a linha anterior, o programa já terá encontrado a condição de parada.
+
+$ python acudes.py
+100.0
+70
+chuva 70
+demanda 10
+Açude passou a liberar água.
+Nível: 140.00
+
+Última atualização por daltonserey, 14 minutos atrás
+5218432016449536/acude.py
+
+limit = float(input())
+level = float(input())
+
+while True:
+    if level >= limit: break
+    event = input().split()
+
+    if event[0] == 'chuva' or event[0] == 'afluente':
+        level += float(event[1])
+    if event[0] == 'demanda':
+        if level - float(event[1]) > 0 and level < limit:
+            level -= float(event[1])
+
+print('Açude passou a liberar água.')
+print(f'Nível: {level:.2f}')
+
+. F. 
+---
+F Fail: seu programa roda, mas não produz a saída exata esperada
+
+Para editar sua resposta:
+
+    faça o checkout da atividade com o comando p1 checkout 5218432016449536;
+    altere sua resposta, editando o arquivo ou criando novos no diretório do checkout;
+    faça o commit com o comando p1 commit ⟨nome-do-seu-arquivo⟩. 
+
+

@@ -1,0 +1,39 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2\n    5.0\n  name: exemplo\n  output: |\n    R$ 200.00\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pintor\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2021-12-20T13:13:32Z",
+        "_author": "ismael.silva.neto@ccc.ufcg.edu.br",
+        "_ip": "177.70.177.234",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "altura_parede = float(input())\nlargura_parede = float(input())\n\nvalor_cobrado = altura_parede * largura_parede * 20.0\n\nprint(f\"R$ {valor_cobrado:.2f}\")\n\n",
+        "hash": "536a4b3d43c5395d5ee02e6573eab3baa02c0a57",
+        "mode": "rw",
+        "name": "pintor.py",
+        "op": "add"
+      }
+    ],
+    "iid": 4630930788450304,
+    "index": null,
+    "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+  },
+  "iid": 4630930788450304,
+  "key": "4630930788450304",
+  "site": "prog1",
+  "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+}

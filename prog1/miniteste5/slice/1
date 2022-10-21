@@ -1,0 +1,10 @@
+def maior_slice(lista):
+    
+    slice = []
+    for i in range(len(lista) - 1):
+        if lista[i] < lista[i+1]:
+            slice.append(lista[i])
+    slice.pop()
+    return slice
+
+print(maior_slice([1,2,3,4,2,0,1]))

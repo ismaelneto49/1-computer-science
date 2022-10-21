@@ -1,0 +1,45 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    7\n    1 5 3 2 88 9 2\n  output: |\n    não\n\n- input: |\n    7\n    1 5 7 2 88 9 2\n  output: |\n    sim\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 4.75,\n      \"header\": 1\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Encontra Elemento\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2021-12-22T15:03:56Z",
+        "_author": "ismael.silva.neto@ccc.ufcg.edu.br",
+        "_ip": "177.70.177.65",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "numero = input()\nsequencia = input()\n\nprintar = \"não\"\n\nfor i in sequencia:\n    if(numero == i):\n        printar = \"sim\"\n\nprint(printar)\n",
+        "hash": "2c7424fd78e22e0fb9b33bdfd7c18235cdf875ab",
+        "mode": "rw",
+        "name": "encontra_elemento.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6424650764517376,
+    "index": null,
+    "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+  },
+  "iid": 6424650764517376,
+  "key": "6424650764517376",
+  "site": "prog1",
+  "user": "ismael.silva.neto@ccc.ufcg.edu.br"
+}

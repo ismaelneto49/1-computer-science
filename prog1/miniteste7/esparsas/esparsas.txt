@@ -1,0 +1,36 @@
+
+Soma matrizes esparsas
+
+Uma matriz é dita esparsa quando um grande número de elementos é nulo. Nesses casos, usar a representação baseada em listas de listas implica em desperdício de memória, porque a maioria dos valores armazenado é igual a zero.
+Mapas para representar matrizes esparsas
+
+Uma representação alternativa bastante usada se baseia no uso de mapas. A idéia é armazenar apenas os valores diferentes de zero, mapeando a posição da matriz ao valor, e as dimensões da matriz.
+
+Assim, por exemplo, uma matriz de dimensões 120 x 200 em que apenas o valor na linha 115, coluna 64 seja igual a -5 e em que os demais valores sejam zero pode ser representada pela seguinte tupla em python:
+
+M = (120, 200, {(115, 64): -5})
+
+Os dois primeiros valores da tupla representam as dimensões da matriz e o terceiro valor é um mapa contendo os valores diferentes de zero. Nesse mapa, as chaves são tuplas de dois elementos inteiros que indicam a linha e coluna da matriz ocupada pelo valor associado.
+Soma de matrizes
+
+Pede-se que você implemente a função soma_matrizes_esparsas(m1, m2) que recebe duas matrizes esparsas com as mesmas dimensões e que produz uma nova matriz esparsa, contendo a soma das duas matrizes passadas como parâmetro.
+Observação
+
+Nessa questão é permitido usar o operador in como função de pertencimento.
+Exemplos de asserts
+
+M1 = (120, 200, {(115, 64): -5})
+M2 = (120, 200, {(20, 55): 5})
+
+SOMA1 = soma_matrizes_esparsas(M1, M2)
+assert SOMA1 == (120, 200, {(115, 64): -5, (20, 55): 5})
+
+Última atualização por daltonserey, um ano atrás
+
+Para enviar sua resposta:
+
+    faça o checkout da atividade com o comando p1 checkout 4957308943597568;
+    faça a atividade, criando sua resposta em um arquivo no diretório do checkout;
+    faça o commit com o comando p1 commit ⟨nome-do-seu-arquivo⟩. 
+
+

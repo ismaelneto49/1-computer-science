@@ -1,0 +1,64 @@
+
+Ordenópolis
+Ordenópolis
+
+Ordenópolis é uma cidade fictícia com uma tradição muito peculiar. Todos os nomes das pessoas nascidas em Ordenópolis possuem 3 palavras e, necessariamente, as 3 palavras estão em ordem alfabética. Um outro aspecto importante é que não existe repetição em nenhuma das 3 palavras. Escreva um programa que leia 3 palavras indicsadas pelos pais de um récem-nascido de Ordenópolis e que imprime o nome completo do novo Ordenopolitano (pessoa que nasce em Ordenópolis).
+
+O programa, contudo, deve exigir que o usuário entre com palavras que formem nomes válidos. Assim, se as palavras entradas não formem um nome válido, o programa deve voltar a pedir os dados ao usuário.
+Entrada
+
+Uma entrada válida para o programa consiste em palavras sugeridas para o novo nome repetidas vezes até que o nome seja considerado válido. A situação mais simples de entrada se dá quando o usuário digita palavras válidas na primeira tentativa. Veja o exemplo abaixo.
+
+antonio
+marcos
+oliveira
+
+Contudo, lembre que o programa deve continuar lendo a entrada se as palavras digitadas não correspondem a um nome válido. Abaixo, um exemplo em que as primeiras 3 tentativas (logo, as primeiras 9 palavras) correspondem a nomes não válidos.
+
+jose
+cesar
+silva
+beatriz
+oliveira
+medeiros
+davi
+abreu
+silva
+antonio
+marcos
+oliveira
+
+Saída
+
+A saída do programa deve incluir os prompts para a leitura de cada palavra da entrada, uma mensagem quando um nome inválido for lido (que não segue as regras de Ordenópolis) e, ao final, o nome completo válido que tiver sido lido que é formado pela concatenação das 3 palavras entradas e mais o conectivo de.
+
+A listagem abaixo combina as saídas produzidas pelo programa e as entradas do segundo exemplo acima, para ilustrar como a execução do programa será vista no terminal.
+
+nome 1? jose
+nome 2? cesar
+nome 3? silva
+nomes inválidos: tente novamente
+nome 1? beatriz
+nome 2? oliveira
+nome 3? medeiros
+nomes inválidos: tente novamente
+nome 1? davi
+nome 2? abreu
+nome 3? silva
+nomes inválidos: tente novamente
+nome 1? antonio
+nome 2? marcos
+nome 3? oliveira
+antonio marcos de oliveira
+
+    Lembre que nos testes automáticos, a saída deve ser completamente separada da entrada. Por isso, os testes podem parecer estranhos, dado que vão corresponder à listagem acima, sem os valores de entrada e sem os respectivos \n após cada entrada. Isso isola completamente o que corresponde à saída. 
+
+Última atualização por wilkerson, uma hora atrás
+
+Para enviar sua resposta:
+
+    faça o checkout da atividade com o comando p1 checkout 6748026099990528;
+    faça a atividade, criando sua resposta em um arquivo no diretório do checkout;
+    faça o commit com o comando p1 commit ⟨nome-do-seu-arquivo⟩. 
+
+

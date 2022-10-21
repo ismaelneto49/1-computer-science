@@ -1,0 +1,28 @@
+
+Únicos em comum
+
+Escreva a função unicos_em_comum(seq1, seq2) que retorna uma lista contendo os elementos únicos de seq1 que também são únicos em seq2. Caso não haja nenhum elemento que atenda ao critério acima, a função deve retornar uma lista vazia.
+Restrições
+
+Sua solução não deve usar as funções que fazem iterações em sequências da linguagem tais como: count, set, intersection e filter.
+Exemplos e Asserts
+
+seq1 = [ 'A', 'A', 'B', 'C', 'C', 'D']
+seq2 = ['B', 'A', 'C', 'D', 'D']
+assert unicos_em_comum(seq1, seq2) == ['B']
+
+Note que, neste exemplo, 'B' e 'D' são únicos em seq1, mas, desses, apenas 'B' é único em seq2.
+
+seq1 = ['A', 'A', 'B', 'C']
+seq2 = ['A', 'B', 'C']
+assert unicos_em_comum(seq1, seq2) == ['B', 'C']
+
+Última atualização por daltonserey, um ano atrás
+
+Para enviar sua resposta:
+
+    faça o checkout da atividade com o comando p1 checkout 5808891403173888;
+    faça a atividade, criando sua resposta em um arquivo no diretório do checkout;
+    faça o commit com o comando p1 commit ⟨nome-do-seu-arquivo⟩. 
+
+
